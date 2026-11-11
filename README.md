@@ -114,3 +114,16 @@ The street-walk case in `tests/eval/street-detect.toml` and the fixture `tests/f
 ## Responsible use
 
 This tool can place a recording, and so the person who made it, on a map. Use it to verify footage, to research the privacy leak itself, or with the recordist's consent. Do not use it to find, track or expose people.
+
+## Licence
+
+The code and text written for this project are licensed under either of
+
+- the Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE)), or
+- the MIT licence ([LICENSE-MIT](LICENSE-MIT)),
+
+at your option.
+
+This covers the project's own work only. The data and the test files listed under [Data sources](#data-sources) keep their own terms. The files taken from AeroSonicDB, for example, are CC BY-NC 4.0: no commercial use.
+
+Unless you state otherwise, any contribution you intentionally submit for inclusion in this project, as defined in the Apache-2.0 licence, is dual licensed as above, with no additional terms or conditions.
