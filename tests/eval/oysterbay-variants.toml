@@ -1,0 +1,29 @@
+# Oyster Bay robustness variants with fresh discovery: none of these may be located (wrong hour,
+# an area that excludes the truth, the clock 30 s off). Media kept locally, never committed.
+
+[[case]]
+id = "oysterbay-wrong-hour"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T19:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+truth_note = "variant: one hour early; must not locate"
+
+[[case]]
+id = "oysterbay-area-excludes"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.9600,-73.3900~5km"
+when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+truth_note = "variant: area 14 km from the truth; must not locate"
+
+[[case]]
+id = "oysterbay-clock-30s"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:59.662Z±5s"
+truth = [40.876466, -73.524951]
+truth_note = "variant: clock 30 s late; must not locate"

@@ -1,0 +1,49 @@
+# Broadband pipeline on Oyster Bay (a development case: used in development before). Media
+# and ADS-B are kept locally, never committed.
+# - oysterbay: the usual case, envelope leg on (it may only cross-check the tonal answer).
+# - oysterbay-envelope-only: every aircraft sound located by timing and loudness only.
+# - oysterbay-wrong-day: ADS-B from a week earlier — must not locate.
+# - rehearsal-wide-prior: a 10-min cut with a wide, off-centre prior (centre ~14 km from
+#   truth, 25 km radius, ±60 s), so a held-out run is never the first time this path runs.
+
+[[case]]
+id = "oysterbay"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+events = "media:oysterbay/events.json"
+truth_note = "public approximate coordinate (video frame + Street View)"
+
+[[case]]
+id = "oysterbay-envelope-only"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+events = "media:oysterbay/events.json"
+envelope_only = true
+truth_note = "timing and loudness only"
+
+[[case]]
+id = "oysterbay-wrong-day"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+events = "media:oysterbay/events.json"
+traffic_shift_days = -7
+envelope_only = true
+truth_note = "wrong-day control, timing and loudness only"
+
+[[case]]
+id = "rehearsal-wide-prior"
+kind = "media"
+media = "media:oysterbay/cuts/rehearsal-0000-600s.wav"
+area = "40.7800,-73.4100~25km"
+when = "2026-09-08T20:17:29.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "10-min cut, wide off-centre prior (~14 km off-centre, 25 km, ±60 s)"

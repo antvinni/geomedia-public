@@ -1,0 +1,45 @@
+[workspace]
+resolver = "3"
+members = ["crates/gm-core", "crates/gm-media", "crates/gm-report", "crates/gm-doppler", "crates/gm-sim", "crates/gm-sources", "crates/gm-search", "crates/gm-cli"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99.1"
+publish = false
+
+[workspace.dependencies]
+gm-core = { path = "crates/gm-core" }
+gm-media = { path = "crates/gm-media" }
+gm-doppler = { path = "crates/gm-doppler" }
+gm-sim = { path = "crates/gm-sim" }
+gm-sources = { path = "crates/gm-sources" }
+gm-search = { path = "crates/gm-search" }
+gm-report = { path = "crates/gm-report" }
+clap = { version = "=4.6.7", features = ["derive"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+thiserror = "=2.0.21"
+anyhow = "=1.0.104"
+symphonia = { version = "=0.6.1", default-features = false, features = ["mp3", "flac", "ogg", "vorbis", "wav", "pcm", "aiff", "mkv", "aac", "alac", "id3v1", "id3v2", "ape", "isomp4"] }
+kamadak-exif = "=0.6.1"
+time = { version = "=0.3.55", features = ["formatting", "parsing", "macros"] }
+sha2 = "=0.11.1"
+hex = "=0.4.3"
+assert_cmd = "=2.2.2"
+tempfile = "=3.27.0"
+insta = "=1.49.0"
+toml = "=1.1.8"
+proptest = "=1.12.0"
+rustfft = "=6.4.1"
+ureq = "=3.5.0"
+tar = "=0.4.46"
+flate2 = "=1.1.10"
+tiff = "=0.11.3"
+
+# Keep debug-build tests over minutes of audio reasonably fast.
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2

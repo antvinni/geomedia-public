@@ -1,0 +1,48 @@
+# Two aircraft audible at the same time with different tones and geometry.
+seed = 23
+sample_rate = 8000
+duration_s = 150.0
+start_utc = "2026-09-08T21:00:00Z"
+
+[observer]
+lat_deg = 40.8765
+lon_deg = -73.5250
+h_ell_m = -20.0
+mic_height_m = 1.5
+
+[atmosphere]
+c = 343.0
+wind_enu = [0.0, 0.0, 0.0]
+
+[noise]
+snr_db = 32.0
+
+[[aircraft]]
+id = "a"
+icao24 = "aaaa11"
+type_code = "C172"
+f0 = 87.0
+harmonics = [1.0]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 20.0
+speed_mps = 60.0
+alt_agl_m = 600.0
+cpa_offset_m = 700.0
+cpa_time_s = 70.0
+half_span_s = 150.0
+
+[[aircraft]]
+id = "b"
+icao24 = "aaaa12"
+type_code = "PC12"
+f0 = 131.0
+harmonics = [1.0]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 200.0
+speed_mps = 130.0
+alt_agl_m = 1500.0
+cpa_offset_m = -1200.0
+cpa_time_s = 80.0
+half_span_s = 150.0

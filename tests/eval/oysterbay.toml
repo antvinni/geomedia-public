@@ -1,0 +1,14 @@
+# The real case from colsto's video. Not run in CI: the media and the ADS-B day are kept
+# locally, never committed. `media:` names files in the kept-data media folder
+# (`geomedia data` shows where). Fetch the ADS-B day first (`geomedia preflight … --when …`).
+# `events` is an optional cache of discovered events (skips decoding and discovery).
+
+[[case]]
+id = "oysterbay"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+events = "media:oysterbay/events.json"
+truth_note = "public approximate coordinate (video frame + Street View)"

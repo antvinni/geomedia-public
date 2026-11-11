@@ -1,0 +1,27 @@
+# Broadband pipeline on the simulator: tone-less jets plus 40 silent aircraft over ±3 h (ADS-B
+# traffic only) so the timing-and-loudness null has real traffic. Truth = each observer.
+# The area is ~450 km² (track-first is refused for it; the envelope leg still runs).
+
+[[case]]
+id = "bb-single"
+kind = "sim"
+scenario = "../fixtures/sim/broadband/single.toml"
+area = "40.8840,-73.5110~12km"
+when = "2026-09-08T20:10:00Z±60s"
+truth_note = "simulator: one tone-less jet (expect a band containing truth, never located)"
+
+[[case]]
+id = "bb-crossing"
+kind = "sim"
+scenario = "../fixtures/sim/broadband/crossing.toml"
+area = "40.8840,-73.5110~12km"
+when = "2026-09-08T20:10:00Z±60s"
+truth_note = "simulator: two tone-less jets crossing (expect a compact region at truth)"
+
+[[case]]
+id = "bb-traffic-only"
+kind = "sim"
+scenario = "../fixtures/sim/broadband/traffic-only.toml"
+area = "40.8840,-73.5110~12km"
+when = "2026-09-08T20:10:00Z±60s"
+truth_note = "simulator: no aircraft sound, traffic only (expect no pass, not located)"

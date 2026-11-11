@@ -1,0 +1,15 @@
+[package]
+name = "gm-search"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+gm-core.workspace = true
+gm-doppler.workspace = true
+gm-sources.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+gm-sim.workspace = true

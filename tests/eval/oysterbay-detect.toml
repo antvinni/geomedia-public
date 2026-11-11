@@ -1,0 +1,12 @@
+# Detection benchmark on the real Oyster Bay recording: fresh discovery every run (no cached
+# events), so changes to the detector are measured. `geomedia eval tests/eval/oysterbay-detect.toml`.
+# Oyster Bay is a development case (used for diagnosis), not held out.
+
+[[case]]
+id = "oysterbay-detect"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+truth_note = "public approximate coordinate (video frame + Street View)"

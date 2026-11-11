@@ -1,0 +1,33 @@
+[package]
+name = "gm-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "geomedia"
+path = "src/main.rs"
+
+[dependencies]
+sha2.workspace = true
+clap.workspace = true
+anyhow.workspace = true
+gm-media.workspace = true
+gm-report.workspace = true
+gm-sim.workspace = true
+gm-doppler.workspace = true
+gm-sources.workspace = true
+gm-core.workspace = true
+gm-search.workspace = true
+serde_json.workspace = true
+time.workspace = true
+toml.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+tar.workspace = true
+flate2.workspace = true
+assert_cmd.workspace = true
+tempfile.workspace = true
+serde_json.workspace = true

@@ -1,0 +1,71 @@
+---
+source: crates/gm-report/src/html.rs
+expression: render_html(&r)
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>geomedia — phone_gps.mov</title>
+<style>
+:root { --bg: #fbfaf8; --fg: #1d1d1b; --muted: #6b6a66; --line: #e3e1dc; --card: #ffffff; --accent: #2f5d8a; --warn: #9a5b00; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #161615; --fg: #ecebe8; --muted: #a09e99; --line: #2e2d2b; --card: #1e1e1c; --accent: #8ab4dc; --warn: #e0a54a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 960px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 22px; margin: 0 0 4px; word-break: break-all; }
+h2 { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 28px 0 8px; }
+.sub { color: var(--muted); margin: 0; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: 13px; }
+tr:last-child td { border-bottom: 0; }
+code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; word-break: break-all; }
+a { color: var(--accent); }
+.empty { font-weight: 600; }
+.warn li { color: var(--warn); }
+footer { color: var(--muted); margin-top: 32px; font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<h1>phone_gps.mov</h1>
+<p class="sub">geomedia metadata report · format: bmff</p>
+<h2>File</h2>
+<section><table>
+<tr><th>Path</th><td class="mono">phone_gps.mov</td></tr>
+<tr><th>Size</th><td>12970 bytes</td></tr>
+<tr><th>SHA-256</th><td class="mono">&lt;redacted&gt;</td></tr>
+</table></section>
+<h2>Container</h2>
+<section><table>
+<tr><th>Brand</th><td class="mono">qt  </td></tr>
+<tr><th>Compatible</th><td class="mono">qt  </td></tr>
+<tr><th>Duration</th><td>1.000 s</td></tr>
+</table></section>
+<h2>Streams</h2>
+<section><table>
+<tr><td class="mono">video mp4v 64x64 1.000 s [VideoHandler]</td></tr>
+<tr><td class="mono">audio mp4a 48000 Hz 1 ch 1.021 s [SoundHandler]</td></tr>
+</table></section>
+<h2>Metadata (untrusted)</h2>
+<section>
+<table>
+<tr><th>Kind</th><th>Value</th><th>Source</th><th>Trust</th></tr>
+<tr><td>location</td><td>51.507200, -0.127600, 11 m · <a href="https://www.openstreetmap.org/?mlat=51.5072&amp;mlon=-0.1276#map=16/51.5072/-0.1276">map</a></td><td class="mono">mdta:com.apple.quicktime.location.ISO6709</td><td>untrusted</td></tr>
+<tr><td>device</td><td>Apple</td><td class="mono">mdta:com.apple.quicktime.make</td><td>untrusted</td></tr>
+<tr><td>device</td><td>iPhone 15</td><td class="mono">mdta:com.apple.quicktime.model</td><td>untrusted</td></tr>
+<tr><td>creation_time</td><td>2026-05-14T10:02:00-07:00</td><td class="mono">mdta:com.apple.quicktime.creationdate</td><td>untrusted</td></tr>
+<tr><td>encoder</td><td>Lavf63.1.102</td><td class="mono">mdta:encoder</td><td>untrusted</td></tr>
+<tr><td>platform_trace</td><td>ffmpeg/libavformat mux (file was processed or re-encoded)</td><td class="mono">trak[0]/mdia/hdlr</td><td>untrusted</td></tr>
+</table>
+</section>
+<footer>All embedded metadata is untrusted: it can be stripped, rewritten or forged.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+# discover-bench cell jet-low-tone, 1.5 km slant, 16 dB (seed 1312): the full template misses it
+# (z 8.7 against bar 9.0 before the tracker); the tracker follows its tone.
+seed = 1312
+sample_rate = 8000
+duration_s = 600.0
+start_utc = "2026-09-08T20:00:00Z"
+[observer]
+lat_deg = 40.8765
+lon_deg = -73.5250
+h_ell_m = -20.0
+mic_height_m = 1.5
+[atmosphere]
+c = 343.0
+wind_enu = [0.0, 0.0, 0.0]
+[noise]
+snr_db = 16.0
+[[aircraft]]
+id = "a"
+icao24 = "bench1"
+type_code = "jet-low-tone"
+f0 = 650.0
+harmonics = [1.00]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 80.0
+speed_mps = 80.0
+alt_agl_m = 1000.0
+cpa_offset_m = 1100.0
+cpa_time_s = 300.0
+half_span_s = 280.0

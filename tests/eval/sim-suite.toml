@@ -1,0 +1,59 @@
+# Simulator suite: `geomedia eval tests/eval/sim-suite.toml --out geomedia-out/eval-sim`.
+# Paths are relative to this file. Truth defaults to each scenario's observer.
+# The area centre is offset ~3 km from the truth so the answer is never the prior centre.
+
+[[case]]
+id = "sim-crossing"
+kind = "sim"
+scenario = "../fixtures/sim/suite/crossing.toml"
+area = "40.9000,-73.5000~6km"
+when = "2026-09-08T21:10:00Z±5s"
+truth_note = "simulator"
+
+[[case]]
+id = "sim-windy"
+kind = "sim"
+scenario = "../fixtures/sim/suite/windy.toml"
+area = "40.8600,-73.5500~6km"
+when = "2026-09-08T21:20:00Z±5s"
+truth_note = "simulator"
+
+[[case]]
+id = "sim-quiet"
+kind = "sim"
+scenario = "../fixtures/sim/suite/quiet.toml"
+area = "40.8900,-73.4900~6km"
+when = "2026-09-08T21:30:00Z±5s"
+truth_note = "simulator"
+
+[[case]]
+id = "sim-three"
+kind = "sim"
+scenario = "../fixtures/sim/suite/three.toml"
+area = "40.8500,-73.5100~6km"
+when = "2026-09-08T21:40:00Z±5s"
+truth_note = "simulator"
+
+[[case]]
+id = "sim-single"
+kind = "sim"
+scenario = "../fixtures/sim/suite/single.toml"
+area = "40.9000,-73.5000~6km"
+when = "2026-09-08T21:50:00Z±5s"
+truth_note = "simulator (one pass: expected not located)"
+
+[[case]]
+id = "sim-decoy"
+kind = "sim"
+scenario = "../fixtures/sim/suite/decoy.toml"
+area = "40.8600,-73.5000~6km"
+when = "2026-09-08T22:00:00Z±5s"
+truth_note = "simulator (silent third aircraft)"
+
+[[case]]
+id = "sim-decel"
+kind = "sim"
+scenario = "../fixtures/sim/suite/decel.toml"
+area = "40.8950,-73.5400~6km"
+when = "2026-09-08T22:10:00Z±5s"
+truth_note = "simulator (decelerating, descending second pass)"

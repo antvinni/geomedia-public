@@ -1,0 +1,191 @@
+{
+ "latitude": 40.88,
+ "longitude": -73.52,
+ "elevation": 12.0,
+ "timezone": "GMT",
+ "hourly_units": {
+  "time": "",
+  "geopotential_height_1000hPa": "",
+  "temperature_1000hPa": "",
+  "wind_speed_1000hPa": "",
+  "wind_direction_1000hPa": "",
+  "geopotential_height_975hPa": "",
+  "temperature_975hPa": "",
+  "wind_speed_975hPa": "",
+  "wind_direction_975hPa": "",
+  "geopotential_height_950hPa": "",
+  "temperature_950hPa": "",
+  "wind_speed_950hPa": "",
+  "wind_direction_950hPa": "",
+  "geopotential_height_925hPa": "",
+  "temperature_925hPa": "",
+  "wind_speed_925hPa": "",
+  "wind_direction_925hPa": "",
+  "geopotential_height_900hPa": "",
+  "temperature_900hPa": "",
+  "wind_speed_900hPa": "",
+  "wind_direction_900hPa": "",
+  "geopotential_height_850hPa": "",
+  "temperature_850hPa": "",
+  "wind_speed_850hPa": "",
+  "wind_direction_850hPa": "",
+  "geopotential_height_800hPa": "",
+  "temperature_800hPa": "",
+  "wind_speed_800hPa": "",
+  "wind_direction_800hPa": "",
+  "geopotential_height_700hPa": "",
+  "temperature_700hPa": "",
+  "wind_speed_700hPa": "",
+  "wind_direction_700hPa": "",
+  "temperature_2m": "",
+  "wind_speed_10m": "",
+  "wind_direction_10m": ""
+ },
+ "hourly": {
+  "time": [
+   "2026-09-08T20:00",
+   "2026-09-08T21:00"
+  ],
+  "geopotential_height_1000hPa": [
+   110,
+   115
+  ],
+  "temperature_1000hPa": [
+   24.0,
+   23.7
+  ],
+  "wind_speed_1000hPa": [
+   12.0,
+   14.0
+  ],
+  "wind_direction_1000hPa": [
+   240,
+   243
+  ],
+  "geopotential_height_975hPa": [
+   330,
+   335
+  ],
+  "temperature_975hPa": [
+   22.3,
+   22.0
+  ],
+  "wind_speed_975hPa": [
+   16.0,
+   18.0
+  ],
+  "wind_direction_975hPa": [
+   245,
+   248
+  ],
+  "geopotential_height_950hPa": [
+   555,
+   560
+  ],
+  "temperature_950hPa": [
+   20.6,
+   20.3
+  ],
+  "wind_speed_950hPa": [
+   20.0,
+   22.0
+  ],
+  "wind_direction_950hPa": [
+   250,
+   253
+  ],
+  "geopotential_height_925hPa": [
+   785,
+   790
+  ],
+  "temperature_925hPa": [
+   19.1,
+   18.8
+  ],
+  "wind_speed_925hPa": [
+   24.0,
+   26.0
+  ],
+  "wind_direction_925hPa": [
+   255,
+   258
+  ],
+  "geopotential_height_900hPa": [
+   1020,
+   1025
+  ],
+  "temperature_900hPa": [
+   17.8,
+   17.5
+  ],
+  "wind_speed_900hPa": [
+   28.0,
+   30.0
+  ],
+  "wind_direction_900hPa": [
+   260,
+   263
+  ],
+  "geopotential_height_850hPa": [
+   1500,
+   1505
+  ],
+  "temperature_850hPa": [
+   15.2,
+   14.899999999999999
+  ],
+  "wind_speed_850hPa": [
+   36.0,
+   38.0
+  ],
+  "wind_direction_850hPa": [
+   270,
+   273
+  ],
+  "geopotential_height_800hPa": [
+   2010,
+   2015
+  ],
+  "temperature_800hPa": [
+   12.1,
+   11.799999999999999
+  ],
+  "wind_speed_800hPa": [
+   40.0,
+   42.0
+  ],
+  "wind_direction_800hPa": [
+   275,
+   278
+  ],
+  "geopotential_height_700hPa": [
+   3110,
+   3115
+  ],
+  "temperature_700hPa": [
+   5.4,
+   5.1000000000000005
+  ],
+  "wind_speed_700hPa": [
+   48.0,
+   50.0
+  ],
+  "wind_direction_700hPa": [
+   280,
+   283
+  ],
+  "temperature_2m": [
+   25.5,
+   25.0
+  ],
+  "wind_speed_10m": [
+   9.0,
+   10.0
+  ],
+  "wind_direction_10m": [
+   230,
+   232
+  ]
+ },
+ "_note": "hand-written test fixture in the shape of the Open-Meteo historical-forecast API; values are invented"
+}

@@ -1,0 +1,407 @@
+# Track-first evaluation (docs/superpowers/specs/2026-11-06-track-first-design.md).
+# Real cases get only the day as prior (`when`); the blind leg gets the narrow window it always
+# had (`blind_when`). Every real case has a wrong-day twin: ADS-B from one week earlier, re-timed
+# onto the recording's day — it must not locate (> 3 km off counts as confident wrong; within
+# 1 km is reported as a route echo). Oyster Bay cases are in-sample (used in development).
+# The held-out phone clip has its own private manifest, kept with its media (broadband pipeline, one run).
+# Needs the ADS-B days (and their neighbours) fetched first: `geomedia preflight … --yes`.
+
+[[case]]
+id = "oysterbay-day"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:17:29.662Z±5s"
+truth = [40.876466, -73.524951]
+truth_note = "public approximate coordinate (video frame + Street View)"
+
+[[case]]
+id = "oysterbay-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/raw.webm"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:17:29.662Z±5s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "public approximate coordinate (video frame + Street View) — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0000-ade9c0-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0000-ade9c0.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:17:29.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "ade9c0 arrives ≈53 s (2986 m slant) and 7c8066 ≈114 s (2940 m) into the cut"
+
+[[case]]
+id = "oysterbay-cut0000-ade9c0-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0000-ade9c0.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:17:29.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "ade9c0 arrives ≈53 s (2986 m slant) and 7c8066 ≈114 s (2940 m) into the cut — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0030-ab20e7-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0030-ab20e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:17:59.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "ab20e7 arrives ≈150 s into the cut at 1726 m slant"
+
+[[case]]
+id = "oysterbay-cut0030-ab20e7-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0030-ab20e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:17:59.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "ab20e7 arrives ≈150 s into the cut at 1726 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0141-a1286c-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0141-a1286c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:19:50.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a1286c arrives ≈150 s into the cut at 1762 m slant"
+
+[[case]]
+id = "oysterbay-cut0141-a1286c-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0141-a1286c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:19:50.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a1286c arrives ≈150 s into the cut at 1762 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0167-aa9093-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0167-aa9093.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:20:16.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "aa9093 arrives ≈150 s into the cut at 2079 m slant"
+
+[[case]]
+id = "oysterbay-cut0167-aa9093-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0167-aa9093.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:20:16.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "aa9093 arrives ≈150 s into the cut at 2079 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0221-a613e7-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0221-a613e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:21:10.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a613e7 arrives ≈150 s into the cut at 1192 m slant"
+
+[[case]]
+id = "oysterbay-cut0221-a613e7-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0221-a613e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:21:10.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a613e7 arrives ≈150 s into the cut at 1192 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0312-a3915a-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0312-a3915a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:22:41.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a3915a arrives ≈150 s into the cut at 1879 m slant"
+
+[[case]]
+id = "oysterbay-cut0312-a3915a-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0312-a3915a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:22:41.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a3915a arrives ≈150 s into the cut at 1879 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0382-a09590-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0382-a09590.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:23:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a09590 arrives ≈150 s into the cut at 1355 m slant"
+
+[[case]]
+id = "oysterbay-cut0382-a09590-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0382-a09590.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:23:51.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a09590 arrives ≈150 s into the cut at 1355 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0452-a189f2-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0452-a189f2.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:25:01.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a189f2 arrives ≈150 s into the cut at 2469 m slant"
+
+[[case]]
+id = "oysterbay-cut0452-a189f2-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0452-a189f2.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:25:01.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a189f2 arrives ≈150 s into the cut at 2469 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0542-0d113a-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0542-0d113a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:26:31.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "0d113a arrives ≈150 s into the cut at 881 m slant"
+
+[[case]]
+id = "oysterbay-cut0542-0d113a-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0542-0d113a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:26:31.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "0d113a arrives ≈150 s into the cut at 881 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0655-c08543-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0655-c08543.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:28:24.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "c08543 arrives ≈150 s into the cut at 1275 m slant"
+
+[[case]]
+id = "oysterbay-cut0655-c08543-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0655-c08543.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:28:24.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "c08543 arrives ≈150 s into the cut at 1275 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut0982-a8222c-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0982-a8222c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:33:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a8222c arrives ≈150 s into the cut at 2594 m slant"
+
+[[case]]
+id = "oysterbay-cut0982-a8222c-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut0982-a8222c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:33:51.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a8222c arrives ≈150 s into the cut at 2594 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut1808-a53d80-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut1808-a53d80.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:47:37.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a53d80 arrives ≈150 s into the cut at 2780 m slant"
+
+[[case]]
+id = "oysterbay-cut1808-a53d80-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut1808-a53d80.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:47:37.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a53d80 arrives ≈150 s into the cut at 2780 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut2005-a1dfeb-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut2005-a1dfeb.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:50:54.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a1dfeb arrives ≈150 s into the cut at 6118 m slant"
+
+[[case]]
+id = "oysterbay-cut2005-a1dfeb-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut2005-a1dfeb.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T20:50:54.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a1dfeb arrives ≈150 s into the cut at 6118 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut2930-ace391-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut2930-ace391.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T21:06:19.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "ace391 arrives ≈150 s into the cut at 3646 m slant"
+
+[[case]]
+id = "oysterbay-cut2930-ace391-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut2930-ace391.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T21:06:19.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "ace391 arrives ≈150 s into the cut at 3646 m slant — wrong-day control"
+
+[[case]]
+id = "oysterbay-cut3135-a34e01-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut3135-a34e01.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T21:09:44.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a34e01 arrives ≈150 s into the cut at 2337 m slant"
+
+[[case]]
+id = "oysterbay-cut3135-a34e01-day-wrong-day"
+kind = "media"
+media = "media:oysterbay/cuts/cut3135-a34e01.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T00:00:00Z/2026-09-09T00:00:00Z"
+blind_when = "2026-09-08T21:09:44.662Z±60s"
+traffic_shift_days = -7
+truth = [40.876466, -73.524951]
+truth_note = "a34e01 arrives ≈150 s into the cut at 2337 m slant — wrong-day control"
+
+[[case]]
+id = "sim-crossing-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/crossing.toml"
+area = "40.9000,-73.5000~6km"
+when = "2026-09-08T21:10:00Z±1h"
+blind_when = "2026-09-08T21:10:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+
+[[case]]
+id = "sim-windy-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/windy.toml"
+area = "40.8600,-73.5500~6km"
+when = "2026-09-08T21:20:00Z±1h"
+blind_when = "2026-09-08T21:20:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+
+[[case]]
+id = "sim-quiet-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/quiet.toml"
+area = "40.8900,-73.4900~6km"
+when = "2026-09-08T21:30:00Z±1h"
+blind_when = "2026-09-08T21:30:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+
+[[case]]
+id = "sim-three-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/three.toml"
+area = "40.8500,-73.5100~6km"
+when = "2026-09-08T21:40:00Z±1h"
+blind_when = "2026-09-08T21:40:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+
+[[case]]
+id = "sim-single-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/single.toml"
+area = "40.9000,-73.5000~6km"
+when = "2026-09-08T21:50:00Z±1h"
+blind_when = "2026-09-08T21:50:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+
+[[case]]
+id = "sim-decoy-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/decoy.toml"
+area = "40.8600,-73.5000~6km"
+when = "2026-09-08T22:00:00Z±1h"
+blind_when = "2026-09-08T22:00:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+
+[[case]]
+id = "sim-decel-hour"
+kind = "sim"
+scenario = "../fixtures/sim/suite/decel.toml"
+area = "40.8950,-73.5400~6km"
+when = "2026-09-08T22:10:00Z±1h"
+blind_when = "2026-09-08T22:10:00Z±5s"
+truth_note = "simulator, ±1 h prior"
+

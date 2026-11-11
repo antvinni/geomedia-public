@@ -1,0 +1,285 @@
+# Livermore (Zenodo 23424278, CC BY 4.0): 40 smartphone recordings, each with its annotated
+# frequency-time curve (one harmonic, UTC). Detection only: discovery is scored against the curve,
+# aligned on the clip's own guide image (no recorder position or WAV start time is published).
+# A dev set: no threshold is tuned against it. Clips are ~68 s, so the template stage abstains:
+# this measures the ridge stage. Media live in the kept-data folder (media:livermore/).
+
+[[case]]
+id = "N373DF_R06"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N373DF_R06/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N373DF_R06/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N394FX_R20"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N394FX_R20/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N394FX_R20/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N4040_R12"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N4040_R12/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N4040_R12/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N413AK_R49"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N413AK_R49/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N413AK_R49/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N757AH_R41"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N757AH_R41/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N757AH_R41/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N784MB_R04"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N784MB_R04/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N784MB_R04/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N788BM_R03"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N788BM_R03/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N788BM_R03/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N916KT_R22"
+kind = "ridges"
+media = "media:livermore/V_constant_H_constant/N916KT_R22/audio.wav"
+truth_csv = "media:livermore/V_constant_H_constant/N916KT_R22/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_constant"
+
+[[case]]
+id = "N172EL_R35"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N172EL_R35/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N172EL_R35/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N248LF_R14"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N248LF_R14/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N248LF_R14/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N310MG_R23"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N310MG_R23/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N310MG_R23/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N4004R_R19"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N4004R_R19/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N4004R_R19/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N413AK_R05"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N413AK_R05/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N413AK_R05/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N413AK_R16"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N413AK_R16/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N413AK_R16/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N500MG_R17"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N500MG_R17/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N500MG_R17/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N563FX_R21"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N563FX_R21/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N563FX_R21/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N61NG_R37"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N61NG_R37/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N61NG_R37/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N621KS_R18"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N621KS_R18/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N621KS_R18/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N67WL_R59"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N67WL_R59/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N67WL_R59/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N759NC_R46"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N759NC_R46/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N759NC_R46/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N795MM_R13"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N795MM_R13/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N795MM_R13/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N7PG_R60"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N7PG_R60/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N7PG_R60/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N7RR_R30"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N7RR_R30/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N7RR_R30/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N8085W_R27"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N8085W_R27/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N8085W_R27/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N86LP_R01"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N86LP_R01/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N86LP_R01/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N913TC_R15"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N913TC_R15/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N913TC_R15/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N9393T_R02"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N9393T_R02/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N9393T_R02/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N958JX_R50"
+kind = "ridges"
+media = "media:livermore/V_constant_H_varying/N958JX_R50/audio.wav"
+truth_csv = "media:livermore/V_constant_H_varying/N958JX_R50/frequency_vs_time_used.csv"
+truth_note = "V_constant_H_varying"
+
+[[case]]
+id = "N456CS_R38"
+kind = "ridges"
+media = "media:livermore/V_varying_H_constant/N456CS_R38/audio.wav"
+truth_csv = "media:livermore/V_varying_H_constant/N456CS_R38/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_constant"
+
+[[case]]
+id = "N60RS_R11"
+kind = "ridges"
+media = "media:livermore/V_varying_H_constant/N60RS_R11/audio.wav"
+truth_csv = "media:livermore/V_varying_H_constant/N60RS_R11/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_constant"
+
+[[case]]
+id = "N748SP_R36"
+kind = "ridges"
+media = "media:livermore/V_varying_H_constant/N748SP_R36/audio.wav"
+truth_csv = "media:livermore/V_varying_H_constant/N748SP_R36/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_constant"
+
+[[case]]
+id = "N814SR_R07"
+kind = "ridges"
+media = "media:livermore/V_varying_H_constant/N814SR_R07/audio.wav"
+truth_csv = "media:livermore/V_varying_H_constant/N814SR_R07/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_constant"
+
+[[case]]
+id = "N1387U_R44"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N1387U_R44/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N1387U_R44/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N231DT_R57"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N231DT_R57/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N231DT_R57/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N2933A_R08"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N2933A_R08/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N2933A_R08/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N3012N_R40"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N3012N_R40/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N3012N_R40/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N451EE_R45"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N451EE_R45/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N451EE_R45/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N451EE_R51"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N451EE_R51/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N451EE_R51/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N662EZ_R48"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N662EZ_R48/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N662EZ_R48/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"
+
+[[case]]
+id = "N9658K_R24"
+kind = "ridges"
+media = "media:livermore/V_varying_H_varying/N9658K_R24/audio.wav"
+truth_csv = "media:livermore/V_varying_H_varying/N9658K_R24/frequency_vs_time_used.csv"
+truth_note = "V_varying_H_varying"

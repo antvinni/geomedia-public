@@ -1,0 +1,52 @@
+# two_props with the second pass decelerating (−0.6 m/s²) and descending (6 m/s) on approach,
+# as an arrival does: its constant-velocity fit is biased in CPA time.
+seed = 2026
+sample_rate = 8000
+duration_s = 1000.0
+start_utc = "2026-09-08T20:40:00Z"
+adsb_dt_s = 1.0
+
+[observer]
+lat_deg = 40.8765
+lon_deg = -73.5250
+h_ell_m = -20.0
+mic_height_m = 1.5
+
+[atmosphere]
+c = 343.0
+wind_enu = [3.0, -2.0, 0.0]
+
+[noise]
+snr_db = 30.0
+
+[[aircraft]]
+id = "pc12"
+icao24 = "aaaa01"
+type_code = "PC12"
+f0 = 87.0
+harmonics = [1.0, 0.6, 0.3]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 80.0
+speed_mps = 140.0
+alt_agl_m = 1800.0
+cpa_offset_m = 1500.0
+cpa_time_s = 40.0
+half_span_s = 120.0
+
+[[aircraft]]
+id = "b350"
+icao24 = "aaaa02"
+type_code = "B350"
+f0 = 103.0
+harmonics = [1.0, 0.5]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 250.0
+speed_mps = 95.0
+accel_mps2 = -0.6
+climb_mps = -6.0
+alt_agl_m = 1200.0
+cpa_offset_m = -900.0
+cpa_time_s = 962.4  # arrivals 920 s after the first (slant delays differ by ~2.4 s)
+half_span_s = 120.0

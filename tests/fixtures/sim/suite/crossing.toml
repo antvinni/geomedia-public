@@ -1,0 +1,49 @@
+# Two passes on crossing tracks (north-bound, then east-bound), 300 s apart.
+seed = 101
+sample_rate = 8000
+duration_s = 400.0
+start_utc = "2026-09-08T21:10:00Z"
+adsb_dt_s = 1.0
+
+[observer]
+lat_deg = 40.8765
+lon_deg = -73.525
+h_ell_m = -20.0
+mic_height_m = 1.5
+
+[atmosphere]
+c = 343.0
+wind_enu = [2.0, 1.0, 0.0]
+
+[noise]
+snr_db = 30.0
+
+[[aircraft]]
+id = "pc121"
+icao24 = "bbbb01"
+type_code = "PC12"
+f0 = 87.0
+harmonics = [1.0, 0.5]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 0.0
+speed_mps = 135.0
+alt_agl_m = 1700.0
+cpa_offset_m = 1300.0
+cpa_time_s = 50.0
+half_span_s = 120.0
+
+[[aircraft]]
+id = "c2082"
+icao24 = "bbbb02"
+type_code = "C208"
+f0 = 97.0
+harmonics = [1.0, 0.5]
+amplitude = 1.0
+[aircraft.straight]
+heading_deg = 90.0
+speed_mps = 85.0
+alt_agl_m = 900.0
+cpa_offset_m = -1000.0
+cpa_time_s = 350.0
+half_span_s = 120.0

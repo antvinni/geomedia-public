@@ -1,0 +1,409 @@
+# Oyster Bay 5-min cuts (decoy-null evaluation): guidance must get a usable null on a short clip,
+# with 0 confident wrong; the same cuts 2 h and 4 h early must not locate and give no guided events.
+# Cut start = arrival − 150 s (clamped to [0, 3300]); make them with tests/eval/make-oysterbay-cuts.sh.
+# In-sample (Oyster Bay was used in development): behaviour, not accuracy, evidence.
+
+[[case]]
+id = "oysterbay-cut0000-ade9c0"
+kind = "media"
+media = "media:oysterbay/cuts/cut0000-ade9c0.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:29.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "ade9c0 arrives ≈53 s (2986 m slant) and 7c8066 ≈114 s (2940 m) into the cut"
+
+[[case]]
+id = "oysterbay-cut0000-ade9c0-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0000-ade9c0.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:17:29.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0000-ade9c0-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0000-ade9c0.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:17:29.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0030-ab20e7"
+kind = "media"
+media = "media:oysterbay/cuts/cut0030-ab20e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:17:59.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "ab20e7 arrives ≈150 s into the cut at 1726 m slant"
+
+[[case]]
+id = "oysterbay-cut0030-ab20e7-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0030-ab20e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:17:59.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0030-ab20e7-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0030-ab20e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:17:59.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0141-a1286c"
+kind = "media"
+media = "media:oysterbay/cuts/cut0141-a1286c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:19:50.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a1286c arrives ≈150 s into the cut at 1762 m slant"
+
+[[case]]
+id = "oysterbay-cut0141-a1286c-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0141-a1286c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:19:50.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0141-a1286c-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0141-a1286c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:19:50.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0167-aa9093"
+kind = "media"
+media = "media:oysterbay/cuts/cut0167-aa9093.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:20:16.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "aa9093 arrives ≈150 s into the cut at 2079 m slant"
+
+[[case]]
+id = "oysterbay-cut0167-aa9093-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0167-aa9093.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:20:16.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0167-aa9093-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0167-aa9093.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:20:16.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0221-a613e7"
+kind = "media"
+media = "media:oysterbay/cuts/cut0221-a613e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:21:10.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a613e7 arrives ≈150 s into the cut at 1192 m slant"
+
+[[case]]
+id = "oysterbay-cut0221-a613e7-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0221-a613e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:21:10.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0221-a613e7-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0221-a613e7.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:21:10.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0312-a3915a"
+kind = "media"
+media = "media:oysterbay/cuts/cut0312-a3915a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:22:41.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a3915a arrives ≈150 s into the cut at 1879 m slant"
+
+[[case]]
+id = "oysterbay-cut0312-a3915a-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0312-a3915a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:22:41.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0312-a3915a-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0312-a3915a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:22:41.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0382-a09590"
+kind = "media"
+media = "media:oysterbay/cuts/cut0382-a09590.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:23:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a09590 arrives ≈150 s into the cut at 1355 m slant"
+
+[[case]]
+id = "oysterbay-cut0382-a09590-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0382-a09590.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:23:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0382-a09590-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0382-a09590.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:23:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0452-a189f2"
+kind = "media"
+media = "media:oysterbay/cuts/cut0452-a189f2.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:25:01.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a189f2 arrives ≈150 s into the cut at 2469 m slant"
+
+[[case]]
+id = "oysterbay-cut0452-a189f2-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0452-a189f2.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:25:01.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0452-a189f2-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0452-a189f2.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:25:01.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0542-0d113a"
+kind = "media"
+media = "media:oysterbay/cuts/cut0542-0d113a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:26:31.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "0d113a arrives ≈150 s into the cut at 881 m slant"
+
+[[case]]
+id = "oysterbay-cut0542-0d113a-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0542-0d113a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:26:31.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0542-0d113a-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0542-0d113a.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:26:31.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0655-c08543"
+kind = "media"
+media = "media:oysterbay/cuts/cut0655-c08543.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:28:24.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "c08543 arrives ≈150 s into the cut at 1275 m slant"
+
+[[case]]
+id = "oysterbay-cut0655-c08543-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0655-c08543.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:28:24.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0655-c08543-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0655-c08543.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:28:24.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0982-a8222c"
+kind = "media"
+media = "media:oysterbay/cuts/cut0982-a8222c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:33:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a8222c arrives ≈150 s into the cut at 2594 m slant"
+
+[[case]]
+id = "oysterbay-cut0982-a8222c-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0982-a8222c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:33:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut0982-a8222c-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut0982-a8222c.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:33:51.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut1808-a53d80"
+kind = "media"
+media = "media:oysterbay/cuts/cut1808-a53d80.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:47:37.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a53d80 arrives ≈150 s into the cut at 2780 m slant"
+
+[[case]]
+id = "oysterbay-cut1808-a53d80-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut1808-a53d80.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:47:37.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut1808-a53d80-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut1808-a53d80.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:47:37.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut2005-a1dfeb"
+kind = "media"
+media = "media:oysterbay/cuts/cut2005-a1dfeb.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T20:50:54.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a1dfeb arrives ≈150 s into the cut at 6118 m slant"
+
+[[case]]
+id = "oysterbay-cut2005-a1dfeb-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut2005-a1dfeb.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T18:50:54.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut2005-a1dfeb-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut2005-a1dfeb.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T16:50:54.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut2930-ace391"
+kind = "media"
+media = "media:oysterbay/cuts/cut2930-ace391.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T21:06:19.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "ace391 arrives ≈150 s into the cut at 3646 m slant"
+
+[[case]]
+id = "oysterbay-cut2930-ace391-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut2930-ace391.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T19:06:19.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut2930-ace391-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut2930-ace391.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T17:06:19.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut3135-a34e01"
+kind = "media"
+media = "media:oysterbay/cuts/cut3135-a34e01.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T21:09:44.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "a34e01 arrives ≈150 s into the cut at 2337 m slant"
+
+[[case]]
+id = "oysterbay-cut3135-a34e01-wrong-2h"
+kind = "media"
+media = "media:oysterbay/cuts/cut3135-a34e01.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T19:09:44.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-2h: must not locate; no guided events"
+
+[[case]]
+id = "oysterbay-cut3135-a34e01-wrong-4h"
+kind = "media"
+media = "media:oysterbay/cuts/cut3135-a34e01.wav"
+area = "40.8840,-73.5110~5km"
+when = "2026-09-08T17:09:44.662Z±60s"
+truth = [40.876466, -73.524951]
+truth_note = "variant wrong-4h: must not locate; no guided events"

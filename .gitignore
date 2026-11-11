@@ -1,0 +1,18 @@
+/target
+/cache
+/runs
+*.wav
+*.mp3
+*.mp4
+*.mov
+*.m4a
+*.flac
+*.parquet
+.DS_Store
+!tests/fixtures/**
+/.superpowers
+/geomedia-out
+
+# AeroSonicDB tools venv
+tests/eval/aerosonic/.venv/
+__pycache__/
